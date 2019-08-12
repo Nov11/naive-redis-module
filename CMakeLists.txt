@@ -10,7 +10,5 @@ set(LIBRARY_OUTPUT_PATH ${CMAKE_BINARY_DIR})
 
 include_directories(${CMAKE_SOURCE_DIR}/include)
 
-add_executable(test test.cpp)
-
-set(MODULE_SRC ${CMAKE_SOURCE_DIR}/src/rand.cpp)
-add_library(rand_module SHARED ${MODULE_SRC})
+set(MODULE_SRC ${CMAKE_SOURCE_DIR}/src/rmod.cpp)
+add_library(rmod_module SHARED ${MODULE_SRC})
